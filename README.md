@@ -1,2 +1,3 @@
 # VideoTube
-Minha versão alternativa do Youtube
+
+Essa é minha versão alternativa do Youtube
