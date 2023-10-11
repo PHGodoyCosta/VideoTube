@@ -3,6 +3,7 @@
 :root {
     --blue: #065fd4;
     --red: #c00;
+    --hover-gray: rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -25,12 +26,13 @@ img {
     width: 24px;
     height: 24px;
     transition: all 0.5s;
+    padding: 5px;
 }
 
 .icon:hover {
     background-color: rgba(172, 172, 172, 0.767);
     border-radius: 50%;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .button_icon, .button_text {

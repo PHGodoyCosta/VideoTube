@@ -4,12 +4,17 @@ import styles from './Header.module.css'
 import InputSearch from '../InputSearch/InputSearch';
 import Profile from '../ProfileArea/Profile';
 
-function Header() {
+type HeaderProps = {
+    handleMenuDisplay: () => void
+}
+
+function Header({handleMenuDisplay}: HeaderProps) {
+
     return (
         <>
             <header className={styles.header} >
                 <div className={styles.header_items}>
-                    <button className="button_icon" >
+                    <button className="button_icon" onClick={() => handleMenuDisplay()} >
                         <BsList className="icon"  />
                     </button>
                     <a href="/">

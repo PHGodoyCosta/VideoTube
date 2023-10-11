@@ -1,7 +1,7 @@
 import noprofile from '../../assets/images/noprofile.jpg'
 import { BsFillPersonFill, BsFilePerson, BsXLg, BsFillGearFill } from 'react-icons/bs'
 import styles from './Profile.module.css'
-import { CSSProperties, useState, useEffect } from 'react'
+import { CSSProperties, useState} from 'react'
 
 function MenuProfile() {
     return (
@@ -48,17 +48,17 @@ function Profile() {
         }
     }
 
-    const handleOutsideClick = () => {
-        alert("Blur")
-    }
+    // const handleOutsideClick = () => {
+    //     alert("Blur")
+    // }
 
-    useEffect(() => {
-        document.addEventListener('click', handleOutsideClick);
+    // useEffect(() => {
+    //     document.addEventListener('click', handleOutsideClick);
     
-        return () => {
-          document.removeEventListener('click', handleOutsideClick);
-        };
-      }, []);
+    //     return () => {
+    //       document.removeEventListener('click', handleOutsideClick);
+    //     };
+    //   }, []);
 
     return (
         <div>
