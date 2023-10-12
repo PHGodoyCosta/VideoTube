@@ -41,14 +41,22 @@ function InputSearch() {
     const [menuDisplay, setMenuDisplay] = useState<CSSProperties>({display: 'none'})
     const [inputValue, setInputValue] = useState<string>("")
 
-    const handleInputClick = () => {
-        if (menuDisplay.display == "none") {
+    const handleInputClick = (mode: boolean) => {
+        if (mode) {
             setMenuDisplay({display: "block"})
         } else {
             setTimeout(() => {
                 setMenuDisplay({display: "none"})
-            }, 200)
+            }, 100)
         }
+        
+        // if (menuDisplay.display == "none") {
+        //     setMenuDisplay({display: "block"})
+        // } else {
+        //     setTimeout(() => {
+        //         setMenuDisplay({display: "none"})
+        //     }, 200)
+        // }
     }
 
     const handleInputValue = (e?: ChangeEvent<HTMLInputElement>, value?: string) => {
@@ -65,7 +73,7 @@ function InputSearch() {
 
     return (
         <div style={{position: "relative"}}>
-            <input type="text" value={inputValue} onChange={(e) => handleInputValue(e)} onClick={handleInputClick} onBlur={handleInputClick} className={styles.input_search} />
+            <input type="text" value={inputValue} onChange={(e) => handleInputValue(e)} onFocus={() => handleInputClick(true)} onBlur={() => handleInputClick(false)} className={styles.input_search} />
             <InputMenu styleMenu={menuDisplay} handleInputValue={handleInputValue} />
         </div>
     )

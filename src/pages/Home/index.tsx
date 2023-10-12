@@ -1,5 +1,6 @@
 import Header from "../../Components/Header/Header";
 import MenuGeral from "./Components/MenuGeral/MenuGeral";
+import TagArea from "./Components/TagArea/TagArea";
 import styles from './Home.module.css'
 import { useState, CSSProperties } from "react";
 
@@ -8,11 +9,18 @@ type MainProps = {
 }
 
 function Main({menuDisplay}: MainProps) {
+    const tags = ["Tudo", "Jogos", "Música", "Vídeos Engraçados"]
 
     return (
         <>
             <main className={styles.main}>
                 <MenuGeral menuDisplay={menuDisplay} />
+                <div className={styles.main_area}>
+                    <TagArea tags={tags} />
+                    <div className={styles.videos_group}>
+                        
+                    </div>
+                </div>
             </main>
         </>
     )

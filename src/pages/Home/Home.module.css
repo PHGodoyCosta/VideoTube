@@ -2,5 +2,8 @@
     display: flex;
     width: 100%;
     gap: 10px;
-    justify-content: space-between;
+}
+
+.main_area {
+    width: 85%;
 }

@@ -36,6 +36,7 @@
 .input_search {
     position: relative;
     height: 25px;
+    outline-color: var(--blue);
     border-radius: 5px;
     border: 1px solid black;
     width: 400px;

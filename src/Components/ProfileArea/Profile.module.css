@@ -10,13 +10,14 @@
     min-width: 200px;
     display: "none";
     top: 55px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     right: 20px;
-    background-color: #D9D9D9;
     border-radius: 10px;
 }
 
 .query_menu {
     gap: 10px;
+    cursor: pointer;
     border-radius: 5px;
     display: flex;
     user-select: none;
@@ -48,5 +49,5 @@
 }
 
 .query_menu:hover {
-    background-color: rgb(158, 158, 158);
+    background-color: var(--hover-gray);
 }

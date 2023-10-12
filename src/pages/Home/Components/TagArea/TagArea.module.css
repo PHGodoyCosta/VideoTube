@@ -1,0 +1,29 @@
+.tag_area {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tag, .tag_selected {
+    padding: 10px 12px;
+    background-color: var(--hover-gray);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tag:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.tag_selected {
+    background-color: black;
+    color: white;
+}
+
+.arrow_right {
+    position: absolute;
+    right: 0;
+}
