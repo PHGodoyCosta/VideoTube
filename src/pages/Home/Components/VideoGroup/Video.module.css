@@ -1,0 +1,50 @@
+.video {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.video_group {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.thumb_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.thumb_area img {
+    border-radius: 10px; /*430x240*/
+    max-width: 430px;
+    max-height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.description_area {
+    display: flex;
+    gap: 5px;
+}
+
+.description_area p {
+    color: #606060;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.description_area h3{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 50%;
+}

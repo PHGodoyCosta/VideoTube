@@ -3,6 +3,7 @@ import MenuGeral from "./Components/MenuGeral/MenuGeral";
 import TagArea from "./Components/TagArea/TagArea";
 import styles from './Home.module.css'
 import { useState, CSSProperties } from "react";
+import VideoGroup from "./Components/VideoGroup/VideoGroup";
 
 type MainProps = {
     menuDisplay: CSSProperties
@@ -18,7 +19,7 @@ function Main({menuDisplay}: MainProps) {
                 <div className={styles.main_area}>
                     <TagArea tags={tags} />
                     <div className={styles.videos_group}>
-                        
+                        <VideoGroup />
                     </div>
                 </div>
             </main>
