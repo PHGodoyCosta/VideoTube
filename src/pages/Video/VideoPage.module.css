@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.main_area {
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.main_area h1 {
+    font-size: 1.7em;
+    margin-top: 10px;
+}
+
+.main_video {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.central_areas {
+    display: flex;
+}
+
+.profile img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    gap: 50px;
+}

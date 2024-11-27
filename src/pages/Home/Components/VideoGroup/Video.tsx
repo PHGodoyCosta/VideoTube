@@ -18,14 +18,18 @@ function Video({thumb, title, time, visualizations, channelName, isVerifiedChann
     return (
         <div className={styles.video}>
             <div className={styles.thumb_area}>
-                <img src={thumb ?? no_video} alt={title} />
+                <a href="/video/test" className={styles.no_link}>
+                    <img src={thumb ?? no_video} alt={title} />
+                </a>
             </div>
             <div className={styles.description_area}>
                 <div className={styles.profile}>
                     <img src={channelThumb ?? no_profile} alt="Imagem do perfil do canal" />
                 </div>
                 <div>
-                    <h3>{title}</h3>
+                    <a href="/video/test" className={styles.no_link}>
+                        <h3>{title}</h3>
+                    </a>
                     <p style={{display: "flex", alignItems: "center", gap: "5px"}}>
                         <span>{channelName}</span>
                         { isVerifiedChannel && (

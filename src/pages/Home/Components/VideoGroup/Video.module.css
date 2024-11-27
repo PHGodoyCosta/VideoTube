@@ -48,3 +48,8 @@
     max-height: 35px;
     border-radius: 50%;
 }
+
+.no_link {
+    color: black;
+    text-decoration: none;
+}
