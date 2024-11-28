@@ -24,6 +24,7 @@
 
 .central_areas {
     display: flex;
+    gap: 10px;
 }
 
 .profile img, .comentario img {
@@ -38,7 +39,34 @@
 
 .comentario {
     display: flex;
-    align-items: ;
+    /* align-items: ; */
     gap: 10px;
     margin-top: 20px;
+}
+
+.video {
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.video h4 {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.video p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.video img {
+    min-width: 150px;
+    max-width: 200px;
+    max-height: 100px;
+    min-height: 80px;
+    border-radius: 10px;
 }

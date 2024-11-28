@@ -81,8 +81,43 @@ function Main({menuDisplay}: MainProps) {
                                 </div>
                             </div>
                         </div>
-                        <div style={{width: "20%"}}>
-
+                        <div style={{minWidth: "20%"}}>
+                            <div>
+                                <a href="#" className={styles.video}>
+                                    <div>
+                                        <img src="https://i.pinimg.com/736x/83/62/84/836284d277e4ebf5b3bd90a23e51b490.jpg" alt="Video" />
+                                    </div>
+                                    <div>
+                                        <h4>Titulo de vídeo teste</h4>
+                                        <p>@mugenitachildz</p>
+                                        <p>69.100.200.300 visualizações - há 3 dias</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" className={styles.video}>
+                                    <div>
+                                        <img src="https://i.pinimg.com/736x/83/62/84/836284d277e4ebf5b3bd90a23e51b490.jpg" alt="Video" />
+                                    </div>
+                                    <div>
+                                        <h4>Titulo de vídeo teste</h4>
+                                        <p>@mugenitachildz</p>
+                                        <p>69.100.200.300 visualizações - há 3 dias</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" className={styles.video}>
+                                    <div>
+                                        <img src="https://i.pinimg.com/736x/83/62/84/836284d277e4ebf5b3bd90a23e51b490.jpg" alt="Video" />
+                                    </div>
+                                    <div>
+                                        <h4>Titulo de vídeo teste</h4>
+                                        <p>@mugenitachildz</p>
+                                        <p>69.100.200.300 visualizações - há 3 dias</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
