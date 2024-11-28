@@ -48,3 +48,43 @@ img {
 .button_text:hover {
     text-decoration: underline;
 }
+
+.normal_button {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.premium_button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.action_button {
+    background-color: #065fd4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
