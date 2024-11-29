@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom"
+import Comment from "./Components/Comment/Comment"
+import AlternativeVideo from "./Components/AlternativeVideo/AlternativeVideo"
 import Header from "../../Components/Header/Header"
 import { useState, CSSProperties } from "react"
 import MenuGeral from "../Home/Components/MenuGeral/MenuGeral"
@@ -66,22 +68,32 @@ function Main({menuDisplay}: MainProps) {
                                     <button className="action_button">Comentar</button>
                                 </div>
                                 <div style={{marginTop: "20px"}}>
-                                    <div className={styles.comentario}>
-                                        <div>
-                                            <img src="https://i.pinimg.com/736x/63/65/94/636594ef0e42c7a30cf5d46b49a726f4.jpg" alt="Imagem de perfil" />
-                                        </div>
-                                        <div>
-                                            <h4>@mugenitachildz</h4>
-                                            <p>
-                                                1980:wow nice song<br/>
-                                                2023:One of the most historical moments in war...
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <Comment
+                                        channel="@mugenitachildz"
+                                        comment="1980:wow nice song<br>2023:One of the most historical moments in war..."
+                                        channelPhoto="https://i.pinimg.com/736x/63/65/94/636594ef0e42c7a30cf5d46b49a726f4.jpg"
+                                    />
+                                    <Comment
+                                        channel="@mugenitachildz"
+                                        comment="1980:wow nice song<br>2023:One of the most historical moments in war..."
+                                        channelPhoto="https://i.pinimg.com/736x/63/65/94/636594ef0e42c7a30cf5d46b49a726f4.jpg"
+                                    />
+                                    <Comment
+                                        channel="@mugenitachildz"
+                                        comment="1980:wow nice song<br>2023:One of the most historical moments in war..."
+                                        channelPhoto="https://i.pinimg.com/736x/63/65/94/636594ef0e42c7a30cf5d46b49a726f4.jpg"
+                                    />
                                 </div>
                             </div>
                         </div>
                         <div style={{minWidth: "20%"}}>
+                            <AlternativeVideo
+                                posterUrl="#"
+                                channel="@mugenitachildz"
+                                title="Titulo de vídeo teste"
+                                visualizations="69.100.200.300 visualizações - há 3 dias"
+                                
+                            />
                             <div>
                                 <a href="#" className={styles.video}>
                                     <div>
