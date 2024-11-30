@@ -26,6 +26,7 @@
 .menu {
     position: absolute;
     width: 100%;
+    z-index: 2;
     display: none;
     top: 35px;
     left: 0;

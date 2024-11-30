@@ -1,4 +1,4 @@
-import { BsList, BsFillMicFill, BsSearch, BsFillCameraReelsFill, BsFillBellFill } from 'react-icons/bs'
+import { BsList, BsFillMicFill, BsSearch, BsFillCameraReelsFill, BsFillBellFill, BsUpload } from 'react-icons/bs'
 import { VideoTubeLogo } from '../Logo/Logo';
 import styles from './Header.module.css'
 import InputSearch from '../InputSearch/InputSearch';
@@ -31,9 +31,10 @@ function Header({handleMenuDisplay}: HeaderProps) {
                     </button>
                 </div>
                 <div className={styles.header_items}>
-                    <button className="button_icon">
-                        <BsFillCameraReelsFill className="icon" />
-                    </button>
+                    <a href="#" className="premium_button">
+                        <BsUpload className="icon" />
+                        <span>Envie seu vídeo!</span>
+                    </a>
                     <div className={styles.bell_area}>
                         <button className="button_icon">
                             <BsFillBellFill className="icon" />

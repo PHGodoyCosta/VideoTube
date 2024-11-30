@@ -16,21 +16,29 @@ function MenuProfile() {
                 </div>
             </div>
             <hr />
-            <div className={styles.query_menu}>
-                <BsFillPersonFill className={styles.icon_menu} />
-                <p>Seu Canal</p>
+            <div>
+                <a href="#" className={styles.query_menu}>
+                    <BsFillPersonFill className={styles.icon_menu} />
+                    <p>Seu Canal</p>
+                </a>
             </div>
-            <div className={styles.query_menu}>
-                <BsFilePerson className={styles.icon_menu} />
-                <p>Alternar Conta</p>
+            <div>
+                <a href="#" className={styles.query_menu}>
+                    <BsFilePerson className={styles.icon_menu} />
+                    <p>Alternar Conta</p>
+                </a>
             </div>
-            <div className={styles.query_menu}>
-                <BsFillGearFill className={styles.icon_menu} />
-                <p>Configurações</p>
+            <div>
+                <a href="#" className={styles.query_menu}>
+                    <BsFillGearFill className={styles.icon_menu} />
+                    <p>Configurações</p>
+                </a>
             </div>
-            <div className={styles.query_menu}>
-                <BsXLg className={styles.icon_menu} />
-                <p>Sair</p>
+            <div>
+                <a href="#" className={styles.query_menu}>
+                    <BsXLg className={styles.icon_menu} />
+                    <p>Sair</p>
+                </a>
             </div>
         </div>
     )
